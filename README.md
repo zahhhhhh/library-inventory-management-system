@@ -74,3 +74,55 @@ library-inventory-management-system/
 ├── .gitignore
 ├── CMakeLists.txt
 └── README.md
+
+## Build Instructions
+
+A C++17-compatible compiler and CMake 3.16 or later are required.
+
+From the project root directory:
+
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+## Run
+
+After a successful build, run the generated `lims` executable from the build directory.
+
+On Linux/macOS:
+
+```bash
+./build/lims
+```
+
+The exact executable path may vary depending on the operating system and CMake generator.
+
+## Current Phase 1 Output
+
+The initial build skeleton currently starts the application and displays:
+
+```text
+Library Inventory Management System (LIMS)
+Phase 1 build skeleton
+```
+
+This confirms the initial program entry point and build configuration before the full application is implemented.
+
+## Scope
+
+The Phase 2 baseline will focus on the inventory-management requirements defined in the Phase 1 conceptual design.
+
+Possible future extensions include:
+
+- Full supplier-management operations
+- CSV import/export
+- Undo functionality
+- Indexed searching
+- Background auto-save
+- Graphical user interface
+- Member accounts
+- Reservations
+- Fines
+
+These extensions are outside the initial baseline implementation.
